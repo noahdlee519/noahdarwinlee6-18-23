@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sora">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href='style.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="ndlicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noah Darwin Lee</title>
+</head>
+<body>
+    <div class="header">
+        <br class="topbit">
+        <div class="header-nav">
+            <li>
+                <a href="portfolio.html" class="header-nav-button" style="color:#ffffff">
+                    <span>[Portfolio]</span>
+                </a>
+            </li>
+            <li>
+                <a href="projects.html" class="header-nav-button">
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="blog.html" class="header-nav-button">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="contact.html" class="header-nav-button">
+                    <span>Contact</span>
+                </a>
+            </li>
+            <li>
+                <a href="about.html" class="header-nav-button">
+                    <span>About</span>
+                </a>
+            </li>
+            <div class="header-icon">
+            <img src="ndlicon.png" class="header-icon" onclick="mainMenu()">
+        </div>
+        </div>
+        <hr class="hr1"/>
+    </div>
+
+<script>
+    function mainMenu() {
+        window.location.href = "index.html";
+}
+
+window.addEventListener("scroll", function() {
+    var backToTopButton = document.getElementById("backToTopButton");
+    
+    if (window.pageYOffset > 500) {
+        backToTopButton.style.display = "block";
+        fadeIn(backToTopButton);
+    } else {
+        fadeOut(backToTopButton);
+    }
+});
+
+function fadeIn(element) {
+    element.style.opacity = "0";
+    var opacity = 0;
+    var interval = setInterval(function() {
+        opacity += 0.1;
+        element.style.opacity = opacity.toString();
+        if (opacity >= 1) {
+            clearInterval(interval);
+        }
+    }, 1);
+}
+
+function fadeOut(element) {
+    var opacity = 1;
+    var interval = setInterval(function() {
+        opacity -= 0.1;
+        element.style.opacity = opacity.toString();
+        if (opacity <= 0.1) {
+            clearInterval(interval);
+            element.style.display = "none";
+        }
+    }, 1);
+}
+
+document.getElementById("backToTopButton").addEventListener("click", function() {
+    scrollToTop();
+});
+
+function scrollToTop() {
+    if (window.scrollY !== 0) {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        setTimeout(scrollToTop, 5000);
+    }
+}
+
+</script>
+
+<!--below is the Portfolio-->
+
+<br id="topbreak">
+
+<!--below are the actual works-->
+<div id="allworks">
+
+    <div id="6/4/23">
+        <a href="https://www.instagram.com/p/CtFxiuCNki8/" class="portfolioimage1">
+            <img src="portfolioimages/Delancey and Chrystie.png" id="DelanceyandChrystie" class="portfolioimage1">
+        </a>
+        <p class="portfoliodescriptions1">"Delancey and Chrystie"</p>
+        <p class="portfoliodescriptions2">Pen on paper</p>
+        <p class="portfoliodescriptions3">Micron 0.5mm</p>
+        <p class="portfoliodescriptions4">June 4, 2023</p>
+    </div>
+    <div id="5/27/23">
+        <a href="https://www.instagram.com/p/CswjZ29udDW/" class="portfolioimage">
+            <img src="portfolioimages/Mexican Embassies and Consulates in the USA.png" id="MexicanEmbassies" class="portfolioimage">
+        </a>
+        <p class="portfoliodescriptions1">"Mexican Embassies and Consulates in the USA"</p>
+        <p class="portfoliodescriptions2">Made with Adobe Illustrator</p>
+        <p class="portfoliodescriptions3">And various GIS applications</p>
+        <p class="portfoliodescriptions4">May 27, 2023</p>
+    </div>
+    <div id="5/1/23">
+        <a href="https://www.instagram.com/p/CrtWpwiODfc/" class="portfolioimage">
+            <img src="portfolioimages/Ideas.png" id="Ideas" class="portfolioimage">
+        </a>
+        <p class="portfoliodescriptions1">"Ideas!"</p>
+        <p class="portfoliodescriptions2">Pen on paper</p>
+        <p class="portfoliodescriptions3">Muji 0.5mm</p>
+        <p class="portfoliodescriptions4">May 1, 2023</p>
+    </div>
+    <div id="4/17/23">
+        <a href="https://www.instagram.com/p/CrAIVa5t9Gl/" class="portfolioimage">
+            <img src="portfolioimages/Kunefeci.png" id="Kunefeci" class="portfolioimage">
+        </a>
+        <p class="portfoliodescriptions1">"Kunefeci" (antakya, before)</p>
+        <p class="portfoliodescriptions2">Made with Adobe Illustrator</p>
+        <p class="portfoliodescriptions4">April 17, 2023</p>
+    </div>
+    <div id="3/26/23">
+        <a href="https://www.instagram.com/p/CqRB4hzOwEf/" class="portfolioimage">
+            <img src="portfolioimages/Sixth Street.jpg" id="SixthStreet" class="portfolioimage">
+        </a>
+        <p class="portfoliodescriptions1">"Proposed Metro + MetroLink Network in Los Angeles"</p>
+        <p class="portfoliodescriptions2">Made with Adobe Illustrator</p>
+        <p class="portfoliodescriptions2">And various GIS applications</p>
+        <p class="portfoliodescriptions4">March 26, 2023</p>
+    </div>
+    <div id="2/23/23">
+        <a href="https://www.instagram.com/p/CpB_2tNt3IZ/" class="portfolioimage">
+            <img src="portfolioimages/Saint Petersburg.jpeg" id="SaintPetersburg" class="portfolioimage">
+        </a>
+        <p class="portfoliodescriptions1">"Imagined Aereal View of Saint Petersburg with a Spanish-Inspired Road Network"</p>
+        <p class="portfoliodescriptions2">Pencil on paper</p>
+        <p class="portfoliodescriptions4">February 23, 2023</p>
+    </div>
+    <div id="12/11/22">
+        <a href="https://www.instagram.com/p/CmCXpeovyQY/" class="portfolioimage">
+            <img src="portfolioimages/Consulates.jpg" id="Consulates" class="portfolioimage">
+        </a>
+        <p class="portfoliodescriptions1">"Chinese, Indian, and Philippine Consulates in the United States"</p>
+        <p class="portfoliodescriptions2">Made with Adobe Illustrator</p>
+        <p class="portfoliodescriptions2">And QGIS</p>
+        <p class="portfoliodescriptions4">December 11, 2022</p>
+    </div>
+    <div id="5/29/21">
+        <a href="https://www.instagram.com/p/CPeNs9_tp8i/" class="portfolioimage">
+            <img src="portfolioimages/Beach House.jpeg" id="Beach House" class="portfolioimage">
+        </a>
+        <p class="portfoliodescriptions1">"underground artist"</p>
+        <p class="portfoliodescriptions2">Acrylic on canvas</p>
+        <p class="portfoliodescriptions2">18x24"</p>
+        <p class="portfoliodescriptions4">May 28, 2021</p>
+    </div>
+    <div id="5/23/21">
+        <a href="https://www.instagram.com/p/CPO3iaHNkrx/" class="portfolioimage">
+            <img src="portfolioimages/Library.jpg" id="Library" class="portfolioimage">
+        </a>
+        <p class="portfoliodescriptions1">"The Phillips Exeter Library"</p>
+        <p class="portfoliodescriptions2">Acrylic on canvas</p>
+        <p class="portfoliodescriptions2">18x24"</p>
+        <p class="portfoliodescriptions4">May 23, 2021</p>
+    </div>
+    <div id="3/10/21">
+        <a href="https://www.instagram.com/p/CMRBBu1BMEY/" class="portfolioimage">
+            <img src="portfolioimages/Asian Museum.jpeg" id="Asian Museum" class="portfolioimage">
+        </a>
+        <p class="portfoliodescriptions1">"Proposal for a Museum and Institute of Asian American Heritage"</p>
+        <p class="portfoliodescriptions2">Pen on paper</p>
+        <p class="portfoliodescriptions4">March 10, 2021</p>
+    </div>
+    <div id="10/2/20">
+        <a href="https://www.instagram.com/p/CF3qoUehxO2/" class="portfolioimage">
+            <img src="portfolioimages/Neo Gothic Modern.jpg" id="Neo Gothic Modern" class="portfolioimage">
+        </a>
+        <p class="portfoliodescriptions1">"untitled"</p>
+        <p class="portfoliodescriptions2">Pencil on paper</p>
+        <p class="portfoliodescriptions4">October 2, 2020</p>
+    </div>
+    <div id="9/2/20">
+        <a href="https://www.instagram.com/p/CEpd1G-Bit5/" class="portfolioimage">
+            <img src="portfolioimages/Grand Central Pagoda.jpg" id="Grand Central Pagoda" class="portfolioimage">
+        </a>
+        <p class="portfoliodescriptions1">"Grand Central Pagoda"</p>
+        <p class="portfoliodescriptions2">Made with SketchUp</p>
+        <p class="portfoliodescriptions4">September 2, 2020</p>
+    </div>
+    <div id="8/5/20">
+        <a href="https://www.instagram.com/p/CDhTNdLBmQV/" class="portfolioimage">
+            <img src="portfolioimages/3 Park Avenue.png" id="3 Park Avenue" class="portfolioimage">
+        </a>
+        <p class="portfoliodescriptions1">"3 Park Avenue"</p>
+        <p class="portfoliodescriptions2">Made with SketchUp</p>
+        <p class="portfoliodescriptions4">August 5, 2020</p>
+    </div>
+    <div id="7/18/20">
+        <a href="https://www.instagram.com/p/CCz9517hsAC/" class="portfolioimage">
+            <img src="portfolioimages/Crown Building.jpg" id="Crown Building" class="portfolioimage">
+        </a>
+        <p class="portfoliodescriptions1">"Crown Building"</p>
+        <p class="portfoliodescriptions2">Made with SketchUp</p>
+        <p class="portfoliodescriptions4">July 18, 2020</p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<!--below is the Instagram portfolio link-->
+
+    <li class="portfolioli">
+                <br>
+                <br>
+                <br>
+        <a href="https://www.instagram.com/noahmakestheart/" id="instagram">
+                <span>[View Portfolio on Instagram]</span>
+        </a>
+    </li>
+
+<!--below is the back to top arrow-->
+
+<a href="#" class="back-to-top" id="backToTopButton">&#8593;</a>
+
+<!--below is the footer-->
+
+<div class="endspacesmall">
+</div>
+
+<div class="footer"><span id="year"> </span><span> Noah Darwin Lee &nbsp;|&nbsp; 2023</span></div>
+</body>
+</html>
